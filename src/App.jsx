@@ -1,7 +1,7 @@
 // src/App.jsx
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Navbar from "./Navbar";
+import Navbar from "./NavBar";
 import Home from "./Home";
 import FloristForm from "./FloristForm";
 import FloristList from "./FloristList";
