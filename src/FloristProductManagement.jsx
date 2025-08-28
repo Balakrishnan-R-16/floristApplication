@@ -64,11 +64,11 @@ const FloristProductManagement = () => {
       floristUsername: floristUsername,
     };
     
-    let url = "http://localhost:8080/api/products/add";
+    let url = "https://backened-hgph.onrender.com/api/products/ad";
     let method = "POST";
 
     if (editingId) {
-      url = `http://localhost:8080/api/products/${editingId}`;
+      url = `https://backened-hgph.onrender.com/api/products/${editingId}`;
       method = "PUT";
     }
     

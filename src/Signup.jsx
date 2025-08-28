@@ -18,7 +18,7 @@ const Signup = ({ setUser }) => {
     setError("");
 
     try {
-      const response = await fetch("http://localhost:8080/api/auth/signup", {
+      const response = await fetch("https://backened-hgph.onrender.com/api/auth/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),

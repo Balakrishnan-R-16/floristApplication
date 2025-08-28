@@ -12,7 +12,7 @@ const FloristList = () => {
 
   const fetchFlorists = async () => {
     try {
-      const response = await fetch("http://localhost:8080/api/getAllFlorists");
+      const response = await fetch("https://backened-hgph.onrender.com/api/getAllFlorists");
       const data = await response.json();
       if (data.success) {
         setFlorists(data.data);
