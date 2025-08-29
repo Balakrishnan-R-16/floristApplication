@@ -29,7 +29,7 @@ const FloristList = () => {
   const handleDelete = async (id) => {
     if (window.confirm("Delete this florist?")) {
       try {
-        const response = await fetch(`http://localhost:8080/api/florist/${id}`, {
+        const response = await fetch(`https://backened-hgph.onrender.com/api/florist/${id}`, {
           method: "DELETE",
         });
         const data = await response.json();

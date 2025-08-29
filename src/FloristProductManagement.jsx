@@ -25,7 +25,7 @@ const FloristProductManagement = () => {
   const fetchProducts = async () => {
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:8080/api/products");
+      const response = await fetch("https://backened-hgph.onrender.com/api/products");
       const data = await response.json();
       if (data.success) {
         setProducts(data.data);
@@ -105,7 +105,7 @@ const FloristProductManagement = () => {
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this product?")) {
       try {
-        const response = await fetch(`http://localhost:8080/api/products/${id}`, {
+        const response = await fetch(`https://backened-hgph.onrender.com/api/products/${id}`, {
           method: "DELETE",
         });
         const data = await response.json();

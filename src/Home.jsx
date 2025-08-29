@@ -11,7 +11,7 @@ const Home = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        `http://localhost:8080/api/searchFlorists?query=${query}`
+        `https://backened-hgph.onrender.com/api/searchFlorists?query=${query}`
       );
       const data = await response.json();
       if (data.success) {
