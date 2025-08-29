@@ -64,7 +64,7 @@ const FloristProductManagement = () => {
       floristUsername: floristUsername,
     };
     
-    let url = "https://backened-hgph.onrender.com/api/products/ad";
+    let url = "https://backened-hgph.onrender.com/api/products/add";
     let method = "POST";
 
     if (editingId) {
